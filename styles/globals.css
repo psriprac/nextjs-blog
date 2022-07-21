@@ -49,9 +49,6 @@ ul {
   @apply list-disc;
 }
 
-li {
-  @apply px-10;
-}
 
 ol {
   @apply list-decimal;

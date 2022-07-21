@@ -12,7 +12,7 @@ export default function Post(props) {
         { props.tags && (props.tags.map(x =>
           `#${x} `
         ))}
-        <h3>{formatDate}</h3>
+        <div>{formatDate}</div>
         { props.author && <h3>By {props.author}</h3>}
         { props.image && 
           <div className="w-full overflow-hidden h-[300px] relative">

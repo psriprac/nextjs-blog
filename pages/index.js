@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { fetchContent } from '../utils/contentful'
-import Image from "next/image"
 
 import Post from '../components/Post'
 
@@ -17,15 +16,14 @@ export default function Home({ posts }) {
       <Post 
         title={firstPost.title}
         date={firstPost.publishDate}
-        image={firstPost.heroImage.url}
-        alt={firstPost.title}
-        author={firstPost.author.name}
-        tags={firstPost.tags}
-        body={firstPost.body.json}
+        // image={firstPost.heroImage.url}
+        // alt={firstPost.title}
+        // author={firstPost.author.name}
+        // tags={firstPost.tags}
+        // body={firstPost.body.json}
       />
       
       <footer>
-
       </footer>
     </div>
   )

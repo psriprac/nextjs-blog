@@ -9,11 +9,16 @@ export default function Post(props) {
     return (
       <div>
         <h1>{props.title}</h1>
+        { props.tags && (props.tags.map(x =>
+          `#${x} `
+        ))}
         <h3>{formatDate}</h3>
-        <h3>By {props.author}</h3>
-        <div className="w-full overflow-hidden h-[300px] relative">
+        { props.author && <h3>By {props.author}</h3>}
+        { props.image && 
+          <div className="w-full overflow-hidden h-[300px] relative">
             <Image src={props.image} alt={props.title} layout="fill" className="object-none"/>
-        </div>
+          </div>
+        }
         <RichText body={props.body} />
 
       </div>

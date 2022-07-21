@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -6,11 +10,49 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  @apply text-2xl;
+  @apply font-bold;
+  @apply py-1;
+}
+
+h2 {
+  @apply text-xl;
+  @apply underline;
+  @apply decoration-purple-500;
+  @apply py-1;
+}
+
+h3 {
+  @apply text-xl;
+  @apply py-1;
+}
+
+p {
+  @apply text-base;
+  @apply py-1;
+}
+
+a {
+  @apply underline;
+  @apply decoration-purple-500;
+  @apply font-bold;
+}
+
+ul {
+  @apply inline-grid;
+  @apply list-disc;
+}
+
+li {
+  @apply px-10;
+}
+
+ol {
+  @apply list-decimal;
 }

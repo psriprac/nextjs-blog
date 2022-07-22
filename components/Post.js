@@ -20,7 +20,8 @@ export default function Post(props) {
               src={props.image} 
               alt={props.title}  
               priority 
-              blur="true" 
+              placeholder="blur" 
+              blurDataURL={props.image}
               layout="fill"
               className="rounded-lg object-none"/>
           </div>

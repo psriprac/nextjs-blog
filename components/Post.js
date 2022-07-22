@@ -15,8 +15,14 @@ export default function Post(props) {
         <div>{formatDate}</div>
         { props.author && <h3>By {props.author}</h3>}
         { props.image && 
-          <div className="w-full overflow-hidden h-[300px] relative">
-            <Image src={props.image} alt={props.title} layout="fill" priority blur="true" className="object-none"/>
+          <div className="flex w-full overflow-hidden h-[300px] relative justify-center">
+            <Image 
+              src={props.image} 
+              alt={props.title}  
+              priority 
+              blur="true" 
+              layout="fill"
+              className="rounded-lg object-none"/>
           </div>
         }
         <RichText body={props.body} />
